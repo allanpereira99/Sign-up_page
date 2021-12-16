@@ -1,0 +1,84 @@
+body {
+    background: linear-gradient(-45deg,  #f09174,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s alternate infinite;
+    height: 100vh;
+   }
+   
+   @keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+    50% {
+     background-position: 100% 50%;
+    }
+    100% {
+     background-position: 0% 50%;
+    }
+   }
+
+   .form h1{
+    color: black;
+    font-size: 50px;
+}
+
+.container{
+    padding: 20px;
+    background-image: linear-gradient(to right,#333, #999,white);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 20px;
+    justify-content: center;
+    margin:20%;
+}
+.form{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 0%;
+}
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="date"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    color: black;
+    font-size: 16px;
+  padding: 10px;
+  position: relative;
+  border-radius: 15px;
+  margin: 10px;
+  border: 3px solid black;
+  text-align: center;
+  background: none;
+  outline: none;
+  transition: 0.25s;
+  color:black;
+}
+.form input[type="submit"]{
+    text-align: center;
+    box-align: center;
+    padding: 8px;
+    margin: 8px;
+    border: 3px solid black;
+    color: black;
+    border-radius: 15px;
+    background: none;
+    cursor: pointer;
+
+}
+
+.form input::placeholder{
+    color: black;
+}
+.form input:hover{
+ background-color: darkgrey;
+  }
